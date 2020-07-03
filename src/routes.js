@@ -29,7 +29,7 @@ export default (isSigned = false) =>
         AddScreen,
       },
       {
-        initialRouteName: isSigned ? 'Sign' : 'App',
+        initialRouteName: isSigned ? 'App' : 'Sign',
       },
     ),
   );

@@ -35,7 +35,8 @@ export function* signUp({payload}) {
       email,
       password,
     });
-
+    Alert.alert('Conta criada com sucesso');
+    return true;
     // history.push('/');
   } catch (err) {
     Alert.alert('Falha no cadastro', 'verifique seus dados!');

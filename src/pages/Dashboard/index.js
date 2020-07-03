@@ -36,7 +36,7 @@ class MapComponent extends Component {
         longitude: info.coords.longitude,
       }),
     );
-
+    console.log(this.state.markers);
     const {latitude} = this.state;
     const {longitude} = this.state;
     return (

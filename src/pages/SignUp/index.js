@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {Image} from 'react-native';
+import {Image, Alert} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import Background from '../../components/Background';
 import logo from '../../assets/logo1.png';
@@ -27,6 +27,12 @@ export default function SignUp({navigation}) {
 
   function handleSubmit() {
     dispatch(signUpRequest(name, email, password));
+    if (dispatch(signUpRequest(name, email, password)))
+      Alert.alert(
+        'Conta criada com sucesso',
+        'Faça login para usar o aplicativo',
+      );
+    navigation.navigate('SignIn');
   }
   return (
     <Background>
