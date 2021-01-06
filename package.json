@@ -13,7 +13,7 @@
   "dependencies": {
     "@react-native-community/geolocation": "^2.0.2",
     "@react-navigation/native": "^5.0.7",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "immer": "^5.3.6",
     "moment": "^2.27.0",
     "react": "16.9.0",
